@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Tour</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form action="" method="post" name="formDatTour" id="formDatTour">
+        <h1>ĐĂNG KÝ DU LỊCH</h1>
+        <table cellpadding="5" cellpadding="5">
+            <colgroup>
+                <col style="width: 36%;">
+            </colgroup>
+            <tr>
+                <td align="left">Họ tên</td>
+                <td>
+                    <input type="text" name="txtHoTen" id="txtHoTen" autofocus class="txt" size="30" maxlength="25">
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Địa chỉ</td>
+                <td>
+                    <textarea name="txtDiaChi" id="txtDiaChi" cols="50" rows="5" maxlength="50" required class="txt"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Điện thoại</td>
+                <td>
+                    <input type="tel" name="txtDienThoai" id="txtDienThoai" required class="txt">
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Khách Việt Nam</td>
+                <td>
+                    <input type="checkbox" name="checkKhach" id="checkKhach" class="checkbox" checked>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Chọn tour</td>
+                <td>
+                    <select name="slcTour" id="slcTour" class="txt">
+                        <option value="1">Hà Nội - Hạ Long - Sapa</option>
+                        <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                        <option value="3">Hà Nội - Cát Bà - Tuần Châu</option>
+                        <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                        <option value="5">Nha Trang - Đà Lạt</option>
+                        <option value="6">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        <option value="7">TpHCM - Cần Thơ - Cà Mau</option>
+                        <option value="8" selected>Phú Quốc - Côn Đảo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Phương tiện</td>
+                <td>
+                    <input type="radio" name="rdoPhuongTien" id="mayBay" value="1" checked>
+                    <label for="mayBay">Máy bay</label>
+                    <input type="radio" name="rdoPhuongTien" id="xeDuLich" value="0">
+                    <label for="xeDuLich">Xe du lịch</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        <label for="numNL">Người lớn</label>
+                        <input type="number" name="numNL" id="numNL" class="txt" min="1" step="1" value="1">
+                        <label for="numTC">Trẻ em</label>
+                        <input type="number" name="numTC" id="numTC" class="txt" min="1" step="1" value="1">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">Ghi chú thêm</td>
+                <td>
+                    <textarea name="txtGhiChu" id="txtGhiChu" cols="50" rows="5" maxlength="50" required class="txt"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" name="btnDongY" id="btnDongY" class="btn" value="Đồng ý">
+                </td>
+            </tr>
+            <tr>
+                <td height="20" colspan="2">
+                    <!-- Tự làm phần này nha -->
+                    <label id="thongbao"></label>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
